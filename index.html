@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laser Photo Facial IPL | Skin Brightening Facial in Manhattan, NYC</title>
+<meta name="description" content="Skin Brightening Facial and IPL Photofacial treatments in Manhattan. Fade sun damage, brown spots, and hyperpigmentation for an even, radiant complexion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340..600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#2E2430;
+    --ink-soft:#5B4E58;
+    --paper:#FBF5F1;
+    --paper-deep:#F3E6DE;
+    --rose:#AD5A6B;
+    --rose-deep:#7E3B49;
+    --gold:#BE9A5C;
+    --line:#E2CFC3;
+    --white:#FFFFFF;
+    --radius-img: 4px 32px 4px 32px;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    color:var(--ink);
+    font-weight:480;
+    letter-spacing:-0.01em;
+    line-height:1.15;
+  }
+
+  a{ color:inherit; text-decoration:none; }
+
+  img{ max-width:100%; display:block; }
+
+  .wrap{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  :focus-visible{
+    outline:2px solid var(--rose-deep);
+    outline-offset:3px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,245,241,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 32px;
+    max-width:1120px; margin:0 auto;
+    gap:20px;
+  }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand img{ height:44px; width:44px; object-fit:cover; border-radius:50%; }
+  .brand-name{ font-family:'Fraunces', serif; font-size:1.05rem; color:var(--rose-deep); line-height:1.2; }
+  .brand-name span{ display:block; font-family:'Work Sans',sans-serif; font-size:0.72rem; color:var(--ink-soft); letter-spacing:0.03em; }
+
+  .header-cta{ display:flex; align-items:center; gap:18px; }
+  .phone-link{ font-size:0.95rem; color:var(--ink); white-space:nowrap; }
+  .phone-link strong{ color:var(--rose-deep); }
+  .btn{
+    display:inline-block;
+    background:var(--rose-deep);
+    color:var(--white);
+    padding:12px 24px;
+    border-radius:2px 14px 2px 14px;
+    font-size:0.9rem;
+    letter-spacing:0.02em;
+    transition:background 0.2s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{ background:var(--rose); }
+  .btn-outline{
+    background:transparent;
+    border:1px solid var(--rose-deep);
+    color:var(--rose-deep);
+  }
+  .btn-outline:hover{ background:var(--rose-deep); color:var(--white); }
+
+  @media (max-width:700px){
+    .phone-link{ display:none; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:76px 0 96px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+  }
+  .hero-eyebrow{
+    color:var(--rose-deep);
+    font-size:0.95rem;
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(2.3rem, 4.4vw, 3.4rem);
+    max-width:11ch;
+  }
+  .hero p.lede{
+    margin-top:22px;
+    max-width:46ch;
+    color:var(--ink-soft);
+    font-size:1.08rem;
+  }
+  .hero-actions{ margin-top:34px; display:flex; gap:16px; flex-wrap:wrap; }
+  .hero-figure{
+    position:relative;
+  }
+  .hero-figure img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:var(--radius-img);
+  }
+  .hero-figure::after{
+    content:"";
+    position:absolute;
+    inset:18px -18px -18px 18px;
+    border:1px solid var(--gold);
+    border-radius:var(--radius-img);
+    z-index:-1;
+  }
+  .hero-keywords{
+    margin-top:36px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 22px;
+    font-size:0.84rem;
+    color:var(--ink-soft);
+  }
+  .hero-keywords span::before{ content:"·"; margin-right:8px; color:var(--gold); }
+  .hero-keywords span:first-child::before{ content:""; margin-right:0; }
+
+  @media (max-width:860px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-figure{ order:-1; }
+    .hero-figure img{ height:340px; }
+    .hero-figure::after{ display:none; }
+  }
+
+  /* ---------- Section shell ---------- */
+  section{ padding:88px 0; }
+  .section-head{
+    max-width:56ch;
+    margin-bottom:52px;
+  }
+  .section-head p{ color:var(--ink-soft); margin-top:14px; font-size:1.02rem; }
+  .section-alt{ background:var(--paper-deep); }
+
+  /* ---------- Services ---------- */
+  .services-list{
+    display:flex;
+    flex-direction:column;
+  }
+  .service-row{
+    display:grid;
+    grid-template-columns:1fr 2.4fr;
+    gap:32px;
+    padding:30px 0;
+    border-top:1px solid var(--line);
+  }
+  .services-list .service-row:last-child{ border-bottom:1px solid var(--line); }
+  .service-row h3{ font-size:1.28rem; color:var(--rose-deep); }
+  .service-row p{ color:var(--ink-soft); max-width:60ch; }
+  .service-tag{
+    display:inline-block;
+    margin-top:12px;
+    font-size:0.78rem;
+    color:var(--gold);
+  }
+
+  @media (max-width:700px){
+    .service-row{ grid-template-columns:1fr; gap:10px; }
+  }
+
+  /* ---------- Why choose ---------- */
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .why-item{
+    background:var(--paper);
+    padding:38px 34px;
+  }
+  .why-item h3{ font-size:1.12rem; margin-bottom:10px; color:var(--ink); }
+  .why-item p{ color:var(--ink-soft); font-size:0.98rem; }
+
+  @media (max-width:700px){
+    .why-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- Image break ---------- */
+  .break{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:56px;
+    align-items:center;
+  }
+  .break img{
+    height:440px;
+    width:100%;
+    object-fit:cover;
+    border-radius:var(--radius-img);
+  }
+  .break-copy h2{ font-size:clamp(1.8rem,3vw,2.4rem); max-width:14ch; }
+  .break-copy p{ margin-top:18px; color:var(--ink-soft); max-width:46ch; }
+  .break-copy .btn{ margin-top:26px; }
+
+  @media (max-width:860px){
+    .break{ grid-template-columns:1fr; }
+    .break img{ height:320px; order:-1; }
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-item{
+    border-top:1px solid var(--line);
+  }
+  .faq-item:last-child{ border-bottom:1px solid var(--line); }
+  .faq-q{
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    font-family:'Fraunces', serif;
+    font-size:1.12rem;
+    color:var(--ink);
+    padding:24px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    cursor:pointer;
+  }
+  .faq-q .mark{
+    flex:none;
+    width:24px; height:24px;
+    border:1px solid var(--rose-deep);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--rose-deep);
+    font-size:1rem;
+    transition:transform 0.25s ease;
+  }
+  .faq-item[open] .faq-q .mark{ transform:rotate(45deg); }
+  .faq-a{
+    padding:0 0 26px;
+    color:var(--ink-soft);
+    max-width:66ch;
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:0.95fr 1.15fr;
+    gap:48px;
+  }
+  .contact-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:2px 28px 2px 28px;
+    padding:40px;
+  }
+  .contact-card h3{ font-size:1.3rem; margin-bottom:22px; }
+  .contact-row{
+    display:flex;
+    gap:14px;
+    padding:14px 0;
+    border-top:1px solid var(--line);
+    font-size:0.98rem;
+  }
+  .contact-row:first-of-type{ border-top:none; padding-top:0; }
+  .contact-row .label{ color:var(--gold); min-width:80px; font-size:0.8rem; letter-spacing:0.02em; padding-top:2px; }
+  .contact-row a{ color:var(--rose-deep); }
+  .map-frame{
+    border-radius:2px 28px 2px 28px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    height:100%;
+    min-height:360px;
+  }
+  .map-frame iframe{ width:100%; height:100%; min-height:360px; border:0; }
+
+  @media (max-width:860px){
+    .contact-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- Final CTA ---------- */
+  .cta-band{
+    background:var(--rose-deep);
+    color:var(--white);
+    text-align:center;
+    padding:70px 32px;
+  }
+  .cta-band h2{ color:var(--white); font-size:clamp(1.7rem,3vw,2.2rem); }
+  .cta-band p{ margin-top:14px; color:#F1DCD9; }
+  .cta-band .btn{ margin-top:28px; background:var(--white); color:var(--rose-deep); }
+  .cta-band .btn:hover{ background:var(--paper-deep); }
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding:44px 0;
+    border-top:1px solid var(--line);
+  }
+  .footer-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:16px;
+    font-size:0.86rem;
+    color:var(--ink-soft);
+  }
+  .footer-brand{ display:flex; align-items:center; gap:10px; }
+  .footer-brand img{ height:30px; width:30px; border-radius:50%; object-fit:cover; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <img src="https://s.floomby.com/uploads/s/090926/whVNicet.jpg?download=1&name=Screenshot-09-09-2026%2006:05:59.jpg" alt="Laser Photo Facial IPL logo">
+      <span class="brand-name">Laser Photo Facial IPL<span>Manhattan, New York</span></span>
+    </a>
+    <div class="header-cta">
+      <a class="phone-link" href="tel:9292245146">Call <strong>929-224-5146</strong></a>
+      <a class="btn" href="#contact">Book a Consultation</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-eyebrow">IPL Photofacial · Manhattan, NYC</p>
+        <h1>A skin brightening facial that fades the spots sunlight left behind</h1>
+        <p class="lede">Laser Photo Facial IPL uses Intense Pulsed Light to break up sun damage, brown spots, and redness at the source, leaving your complexion calmer, clearer, and visibly more even — no downtime required.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Reserve Your Session</a>
+          <a class="btn btn-outline" href="tel:9292245146">929-224-5146</a>
+        </div>
+        <div class="hero-keywords">
+          <span>Sun Damage Removal</span>
+          <span>Brown Spots Treatment</span>
+          <span>Hyperpigmentation Treatment</span>
+          <span>Melasma Treatment</span>
+          <span>IPL For Fair Skin</span>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <img src="https://img.magnific.com/premium-photo/young-woman-with-glowing-skin-soft-smile-minimalist-background_1088401-402.jpg?w=2000" alt="Woman with glowing, evenly toned skin after an IPL skin brightening facial">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Our Services</h2>
+        <p>Every treatment is built around one goal: a brighter, more even complexion, delivered through precise, non-invasive IPL technology suited to fair and light-to-medium skin tones.</p>
+      </div>
+
+      <div class="services-list">
+        <div class="service-row">
+          <h3>Skin Brightening Facial</h3>
+          <div>
+            <p>Our signature IPL Photofacial targets dullness, uneven tone, and dark spots in a single session, encouraging fresh, luminous skin to surface without peeling or downtime.</p>
+            <span class="service-tag">Our most requested treatment</span>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <h3>Sun Damage &amp; Brown Spot Removal</h3>
+          <p>Years of sun exposure show up as freckling and flat brown patches. Targeted pulses of light break down excess pigment so spots gradually fade and flake away.</p>
+        </div>
+
+        <div class="service-row">
+          <h3>Hyperpigmentation &amp; Melasma Treatment</h3>
+          <p>Stubborn discoloration from hormones, sun, or old breakouts responds to a carefully calibrated IPL protocol designed to even out patchy or blotchy tone over a course of sessions.</p>
+        </div>
+
+        <div class="service-row">
+          <h3>Broken Capillaries Reduction</h3>
+          <p>Visible redness and small facial veins are addressed directly with light energy, calming flushed areas around the cheeks and nose for a smoother-looking complexion.</p>
+        </div>
+
+        <div class="service-row">
+          <h3>Even Skin Tone &amp; Radiant Complexion Treatment</h3>
+          <p>For skin that looks tired or uneven rather than spotted, a lighter IPL protocol refreshes overall tone and texture, restoring the natural radiance underneath.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="section-alt" id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Why Choose Laser Photo Facial IPL?</h2>
+        <p>Based in the heart of Manhattan, we specialize in one thing: gentle, effective IPL treatments for brighter, more even skin.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>Specialized in IPL for fair skin</h3>
+          <p>Our settings are calibrated specifically for fair and light-to-medium skin tones, reducing the guesswork and risk that comes with one-size-fits-all light therapy.</p>
+        </div>
+        <div class="why-item">
+          <h3>No downtime, real results</h3>
+          <p>Treatments fit into a lunch break. You can return to your day immediately, while pigment and redness continue to fade over the following days.</p>
+        </div>
+        <div class="why-item">
+          <h3>A focused, non-invasive approach</h3>
+          <p>No needles, no surgery, no lengthy recovery. Just intense pulsed light working with your skin's own renewal process.</p>
+        </div>
+        <div class="why-item">
+          <h3>Central Manhattan location</h3>
+          <p>Conveniently located at 109 W 38th St, steps from Bryant Park and the Garment District, making appointments easy to fit into a workday.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE BREAK -->
+  <section>
+    <div class="wrap break">
+      <img src="https://img.magnific.com/premium-photo/young-woman-applying-face-cream-bathroom-skincare-routine-fresh-look_1207718-181049.jpg?w=2000" alt="Woman applying skincare cream as part of her post-IPL routine">
+      <div class="break-copy">
+        <h2>Brightening that continues after you leave the chair</h2>
+        <p>IPL Photofacial treatments work with your skin over time. We'll walk you through simple aftercare so the pigment correction and tone-evening effects keep building between sessions, whether you're addressing sun damage, melasma, or general dullness.</p>
+        <a class="btn" href="#contact">Ask About a Treatment Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-alt" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Frequently Asked Questions</h2>
+        <p>A few things people ask before their first IPL Photofacial.</p>
+      </div>
+
+      <div>
+        <details class="faq-item" open>
+          <summary class="faq-q">What is a Skin Brightening Facial with IPL?<span class="mark">+</span></summary>
+          <div class="faq-a">It's a light-based treatment that uses Intense Pulsed Light to target excess pigment and redness beneath the skin's surface. As treated cells clear over the following days, your complexion looks noticeably brighter and more even.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Is IPL safe for fair and sensitive skin?<span class="mark">+</span></summary>
+          <div class="faq-a">Yes — our IPL protocols are specifically suited to fair and light-to-medium skin tones. During your consultation, we'll assess your skin type and sun exposure history to set the safest, most effective settings for you.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Is there any downtime after treatment?<span class="mark">+</span></summary>
+          <div class="faq-a">Most clients return to normal activities right away. Skin may look slightly pink or flushed for a few hours, and treated brown spots often darken briefly before flaking off naturally over the following one to two weeks.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How many sessions will I need?<span class="mark">+</span></summary>
+          <div class="faq-a">It depends on your goals. A single session can refresh overall tone, while sun damage, melasma, or broken capillaries typically respond best to a short series of sessions spaced several weeks apart.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">When will I see results?<span class="mark">+</span></summary>
+          <div class="faq-a">Many clients notice brighter, more even skin within a week as treated pigment surfaces and clears. Fuller results for sun damage and hyperpigmentation usually build gradually over the course of your treatment plan.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Contact Information</h2>
+        <p>Located in the Garment District, easily reachable from across Manhattan and NYC.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Laser Photo Facial IPL</h3>
+          <div class="contact-row">
+            <span class="label">Address</span>
+            <span>109 W 38th St, Floor 12, Suite 20<br>New York, NY 10018</span>
+          </div>
+          <div class="contact-row">
+            <span class="label">Phone</span>
+            <a href="tel:9292245146">929-224-5146</a>
+          </div>
+          <div class="contact-row">
+            <span class="label">Website</span>
+            <a href="https://www.selfiehousenyc.com/" target="_blank" rel="noopener">selfiehousenyc.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="label">Directions</span>
+            <a href="https://www.google.com/maps?cid=12571459786334585939" target="_blank" rel="noopener">View on Google Maps</a>
+          </div>
+        </div>
+
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.423571045319!2d-73.98638559999999!3d40.7527077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac2b9c8d7a48e7%3A0xae76cc11b894c453!2sLaser%20Photo%20Facial%20IPL!5e0!3m2!1sen!2s!4v1788933879561!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Laser Photo Facial IPL location map"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <div class="cta-band">
+    <h2>Ready for brighter, more even skin?</h2>
+    <p>Book a consultation at our Manhattan studio and find the right IPL plan for your skin.</p>
+    <a class="btn" href="tel:9292245146">Call 929-224-5146</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="https://s.floomby.com/uploads/s/090926/whVNicet.jpg?download=1&name=Screenshot-09-09-2026%2006:05:59.jpg" alt="Laser Photo Facial IPL logo">
+      <span>Laser Photo Facial IPL — 109 W 38th St, Floor 12, Suite 20, New York, NY 10018</span>
+    </div>
+    <span>© 2026 Laser Photo Facial IPL. All rights reserved.</span>
+  </div>
+</footer>
+
+</body>
+</html>
